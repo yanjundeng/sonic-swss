@@ -25,6 +25,7 @@ CFLAGS_USAN = -fsanitize=undefined
 p4orch_tests_SOURCES = $(ORCHAGENT_DIR)/orch.cpp \
 		       $(ORCHAGENT_DIR)/vrforch.cpp \
 		       $(ORCHAGENT_DIR)/vxlanorch.cpp \
+               $(ORCHAGENT_DIR)/vrforch.cpp \
 		       $(ORCHAGENT_DIR)/copporch.cpp \
 		       $(ORCHAGENT_DIR)/switch/switch_capabilities.cpp \
 		       $(ORCHAGENT_DIR)/switch/switch_helper.cpp \
@@ -53,6 +54,7 @@ p4orch_tests_SOURCES = $(ORCHAGENT_DIR)/orch.cpp \
 		       $(P4ORCH_DIR)/l3_admit_manager.cpp \
 		       $(P4ORCH_DIR)/ext_tables_manager.cpp \
 		       $(top_srcdir)/tests/mock_tests/fake_response_publisher.cpp \
+               fake_routeorch.cpp \
 		       fake_portorch.cpp \
 		       fake_crmorch.cpp \
 		       fake_flexcounterorch.cpp \
