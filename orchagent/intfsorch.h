@@ -76,6 +76,7 @@ public:
 
     bool isRemoteSystemPortIntf(string alias);
     bool isLocalSystemPortIntf(string alias);
+    void voqSyncIntfState(string &alias, bool);
 
 private:
 
